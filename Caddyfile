@@ -1,0 +1,4 @@
+local.docs {
+    tls internal
+    reverse_proxy localhost:11000
+}

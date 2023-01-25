@@ -1,4 +1,8 @@
 local.docs {
     tls internal
+    encode gzip
+    header {
+        Cache-Control "public, max-age=31536000, immutable"
+    }
     reverse_proxy localhost:11000
 }
